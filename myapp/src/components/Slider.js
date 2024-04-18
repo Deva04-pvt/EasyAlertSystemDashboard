@@ -21,10 +21,40 @@ const Slider = () => {
           max="100"
           value={value}
           onChange={handleChange}
-          className="w-full h-4 bg-gray-700 bg-opacity-50 rounded-full appearance-none focus:outline-none"
+          className="w-full h-4 bg-gray-700 bg-opacity-50 rounded-full appearance-none focus:outline-none slider"
         />
         <span className="ml-2 text-gray-300">100</span>
       </div>
+      <style>
+        {`
+          input[type="range"]::-webkit-slider-thumb {
+            background-color: white;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            -webkit-appearance: none;
+            appearance: none;
+          }
+          
+          input[type="range"]::-moz-range-thumb {
+            background-color: white;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+          }
+          
+          input[type="range"]::-ms-thumb {
+            background-color: white;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+          }
+          
+          input[type="range"]:focus {
+            outline: none;
+          }
+        `}
+      </style>
     </div>
   );
 };
