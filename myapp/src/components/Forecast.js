@@ -5,7 +5,7 @@ import LineChart from './LineChart'; // Import the LineChart component
 
 function Forecast() {
   // Define the state object with options and series data for the LineChart
-  const [chartData, setChartData] = useState({
+  const [chartData] = useState({
     options: {
       chart: {
         type: 'line'
@@ -23,7 +23,7 @@ function Forecast() {
   });
 
   // You may want different data for Fireweather Index
-  const [fireweatherData, setFireweatherData] = useState({
+  const [fireweatherData] = useState({
     options: {
       chart: {
         type: 'line'
