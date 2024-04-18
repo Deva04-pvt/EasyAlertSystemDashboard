@@ -1,9 +1,16 @@
 import React from "react";
 import "./App.css";
+import USMap from "./components/USMap";
+import Navbar from "./components/Navbar";
+import Slider from "./components/Slider";
+import RadioButtons from "./components/RadioButtons";
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl">Hello world</h1>
+    <Navbar/>
+    <RadioButtons/>
+      <USMap/>
+      <Slider/>
     </div>
   );
 };
