@@ -8,8 +8,9 @@ const Options = () => {
   };
 
   return (
-    <div className="w-72 mx-auto bg-gray-800 bg-opacity-70 p-4 rounded-lg">
+    <div className="w-72 mx-auto bg-gray-800 bg-opacity-70 p-4 rounded-lg backdrop-filter backdrop-blur-sm">
       <div className="flex items-center mb-2">
+        {/* Empty div removed */}
       </div>
       <div className="flex items-center">
         <div className="flex items-center mr-4">
@@ -22,7 +23,7 @@ const Options = () => {
             onChange={handleOptionChange}
             className="mr-2"
           />
-          <label htmlFor="option1">Hourly</label>
+          <label htmlFor="option1" className="text-gray-300">Hourly</label>
         </div>
         <div className="flex items-center mr-4">
           <input
@@ -34,7 +35,7 @@ const Options = () => {
             onChange={handleOptionChange}
             className="mr-2"
           />
-          <label htmlFor="option2">Daily</label>
+          <label htmlFor="option2" className="text-gray-300">Daily</label>
         </div>
         <div className="flex items-center">
           <input
@@ -46,7 +47,7 @@ const Options = () => {
             onChange={handleOptionChange}
             className="mr-2"
           />
-          <label htmlFor="option3">Monthly</label>
+          <label htmlFor="option3" className="text-gray-300">Monthly</label>
         </div>
       </div>
     </div>

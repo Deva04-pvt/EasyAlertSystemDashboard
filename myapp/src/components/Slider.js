@@ -8,13 +8,13 @@ const Slider = () => {
   };
 
   return (
-    <div className="w-64 mx-auto bg-gray-800 bg-opacity-70 p-4 rounded-lg">
+    <div className="w-64 mx-auto bg-gray-800 bg-opacity-70 p-4 rounded-lg backdrop-filter backdrop-blur-sm">
       <div className="flex items-center mb-2">
-        <span className="mr-2 font-semibold">Time Frame: (days)</span>
-        <output className="text-gray-700">{value}</output>
+        <span className="mr-2 font-semibold text-gray-300">Time Frame: (days)</span>
+        <output className="text-gray-300">{value}</output>
       </div>
       <div className="flex items-center">
-        <span className="mr-2">0</span>
+        <span className="mr-2 text-gray-300">0</span>
         <input
           type="range"
           min="0"
@@ -23,7 +23,7 @@ const Slider = () => {
           onChange={handleChange}
           className="w-full h-4 bg-gray-700 bg-opacity-50 rounded-full appearance-none focus:outline-none"
         />
-        <span className="ml-2">100</span>
+        <span className="ml-2 text-gray-300">100</span>
       </div>
     </div>
   );
