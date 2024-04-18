@@ -8,7 +8,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="w-64 mx-auto bg-gray-300 bg-opacity-50 p-4 rounded-lg">
+    <div className="w-64 mx-auto bg-gray-800 bg-opacity-70 p-4 rounded-lg">
       <div className="flex items-center mb-2">
         <span className="mr-2 font-semibold">Time Frame: (days)</span>
         <output className="text-gray-700">{value}</output>
@@ -21,7 +21,7 @@ const Slider = () => {
           max="100"
           value={value}
           onChange={handleChange}
-          className="w-full h-4 bg-gray-200 rounded-full appearance-none focus:outline-none"
+          className="w-full h-4 bg-gray-700 bg-opacity-50 rounded-full appearance-none focus:outline-none"
         />
         <span className="ml-2">100</span>
       </div>
