@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-lg">
       <div className="max-w-screen-xl mx-auto px-6 py-2 flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-lg">Your Website Name</span>
+          <span className="text-lg">Early Alert System Dashboard</span>
         </div>
         <div>
           <button onClick={handleUserIconClick}>
