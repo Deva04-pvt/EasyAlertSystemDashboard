@@ -42,9 +42,21 @@ function Forecast() {
 
   return (
     <div
-      className="flex flex-col p-5 text-center rounded-xl bg-gray-400 bg-opacity-50 max-w-[340px] overflow-auto"
-      style={{ height: "612px" }} // Setting the height to 612 px
+      className="flex flex-col p-5 text-center rounded-xl bg-gray-400 bg-opacity-50 max-w-[340px] h-[660px]"
+      style={{
+        overflowY: "auto", // Allows vertical scrolling
+        scrollbarWidth: "none", // Hides scrollbar in Firefox
+      }}
     >
+      {/* Custom CSS for hiding scrollbar in Chrome, Edge, and Safari */}
+      <style>
+        {`
+          .Forecast::-webkit-scrollbar {
+            width: 0; /* Hide scrollbar in other browsers */
+          }
+        `}
+      </style>
+
       {/* Heat Stress Index Forecast section */}
       <div className="flex flex-col justify-center px-8 py-5 text-base rounded-xl bg-slate-500 mb-4">
         <div className="font-medium text-white text-opacity-90">
@@ -82,7 +94,7 @@ function Forecast() {
       {/* Alerts section */}
       <div className="flex flex-col justify-center py-6 rounded-xl bg-slate-500">
         <div className="flex justify-center gap-5 self-center">
-          <div class="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
             <div className="text-xs leading-4 text-white text-opacity-90">
               Heat Stress ALERT
             </div>
